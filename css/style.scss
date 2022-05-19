@@ -1,12 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Lato:wght@300&family=Roboto+Slab&display=swap');
+
+$primaryFont: 'Lato', sans-serif;
+$importantTextFont: 'Roboto Slab', serif;
+$titleFont: 'Koulen', cursive;
+
+$bgcolor: #3b3b3b;
+$primary: #42b3a2;
+$secondary: #25796c;
+
+
 *{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    font-family: $primaryFont;
 }
 
+body
+{
+    background: $bgcolor;
+}
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: $bgcolor;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0px 0px 10px 0px;
+    background-color: $primary;
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        margin: 0px 30px;
+    }
+    &__title{
+        display: block;
+        text-align: center;
+        font-size: 4em;
+        font-family: $titleFont;
+        height: 80px;
+    }
+    &__motto{
+        text-align: center;
+        font-size: 1em;
+        height: 20px;
+
+    }
+    &__list
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 0px 20px 0px 0px;
+        padding: 10px 0px 0px 0px;
+    }
+    &__listelement{
+        font-family: $importantTextFont;
+        text-align: center;
+        list-style: none;
+        padding: 15px 20px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        color: black;
+        font-size: 1.2em;
+        transition: 0.4s;
+        &:hover
+        {
+            background-color: $bgcolor;
+            color: white;
+        }
+    }
+}
+
+.line
+{
+    background: $secondary;
+    height: 50px;
+    width: 2px;
+    border-radius: 1px;
 }
