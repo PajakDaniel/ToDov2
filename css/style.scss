@@ -35,6 +35,7 @@ body
     height: 100px;
     padding: 0px 0px 10px 0px;
     background-color: $primary;
+    margin-bottom: 40px;
     &__logo{
         display: flex;
         flex-direction: column;
@@ -49,6 +50,7 @@ body
         font-size: 4em;
         font-family: $titleFont;
         height: 80px;
+        min-width: 222px;
     }
     &__motto{
         text-align: center;
@@ -82,6 +84,88 @@ body
             background-color: $bgcolor;
             color: white;
         }
+    }
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.card{
+    width: 320px;
+    background: $secondary;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 0 0.3em $secondary;
+    display: flex;
+    flex-direction: column;
+    //border: $primary 5px solid;
+
+    &__title{
+        font-size: 25px;
+        font-family: $importantTextFont;
+        text-align: center;
+        //border: #3b3b3b 3px solid;
+        box-shadow: 0 0 0.8em $bgcolor;
+        border-radius: 15px 15px 0px 0px;
+        background-color: $primary;
+        padding: 3px;
+    }
+    &__description{
+        margin-top: 2px;
+        font-size: 13px;
+        font-family: $importantTextFont;
+        text-align: center;
+        //border: #3b3b3b 3px solid;
+        box-shadow: 0 0 0.6em $bgcolor;
+        border-radius: 0px 0px 10px 10px;
+        background-color: $primary;
+        padding: 3px;
+    }
+    &__list{
+        margin-top: 5px;
+    }
+
+    &__addTaskButton{
+        margin-top: 15px;
+        background: $secondary;
+        text-align: start;
+        padding: 3px 10px;
+        border: 0px;
+        border-radius: 10px;
+        font-family: $primaryFont;
+        transition: 0.4s;
+        &:hover{
+            background-color: #42b3a2;
+        }
+    }
+}
+
+.task{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    margin-top: 15px;
+    background-color: $primary;
+    border-radius: 3px;
+    box-shadow: 0 0 0.6em $bgcolor;
+    &__desc{
+        font-family: $primaryFont;
+        padding: 3px;
+    }
+    &__checkbox{
+        height: 20px;
+        width: 20px;
+        background-color: #25796c;
+        border-radius: 10px;
+        border: 0;
+        margin: 5px 0px;
     }
 }
 
