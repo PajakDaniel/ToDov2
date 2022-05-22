@@ -100,6 +100,8 @@ body {
   border-radius: 15px 15px 0px 0px;
   background-color: #42b3a2;
   padding: 3px;
+  resize: none;
+  height: 35px;
 }
 .card__description {
   margin-top: 2px;
@@ -110,6 +112,8 @@ body {
   border-radius: 0px 0px 10px 10px;
   background-color: #42b3a2;
   padding: 3px;
+  resize: none;
+  height: 23px;
 }
 .card__list {
   margin-top: 5px;
@@ -133,7 +137,7 @@ body {
   gap: 10px;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px;
+  padding: 3px 20px;
   margin-top: 15px;
   background-color: #42b3a2;
   border-radius: 3px;
@@ -141,7 +145,12 @@ body {
 }
 .task__desc {
   font-family: "Lato", sans-serif;
+  background-color: #42b3a2;
+  width: 80%;
+  height: 19px;
   padding: 3px;
+  border: 0px;
+  resize: none;
 }
 .task__checkbox {
   height: 20px;
@@ -150,6 +159,21 @@ body {
   border-radius: 10px;
   border: 0;
   margin: 5px 0px;
+}
+
+.newCard__button {
+  width: 320px;
+  padding: 15px;
+  border-radius: 30px;
+  opacity: 30%;
+  background: #42b3a2;
+  border: 0px;
+  transition: 0.6s;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+}
+.newCard__button:hover {
+  opacity: 80%;
 }
 
 .line {

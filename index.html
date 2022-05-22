@@ -27,56 +27,32 @@
         <main>
             <section class="cardContainer">
                 <div class="card">
-                    <p class="card__title">Test1</p>
-                    <p class="card__description">Jakis krotki test</p>
+                    <textarea class="card__title" placeholder="Tytuł..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                    <textarea class="card__description" placeholder="Opis..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
                     <div class="card__list">
                         <div class="task">
-                            <p class="task__desc">Zrobic strone</p>
+                            <textarea class="task__desc" placeholder="Zadanie..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
                             <input type="button" class="task__checkbox">
                         </div>
                         <div class="task">
-                            <p class="task__desc">Zrobic strone</p>
+                            <textarea class="task__desc" placeholder="Zadanie..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
                             <input type="button" class="task__checkbox">
                         </div>
                         <div class="task">
-                            <p class="task__desc">Zrobic strone</p>
+                            <textarea class="task__desc" placeholder="Zadanie..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
                             <input type="button" class="task__checkbox">
                         </div>
                         <div class="task">
-                            <p class="task__desc">Zrobic strone</p>
+                            <textarea class="task__desc" placeholder="Zadanie..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
                             <input type="button" class="task__checkbox">
                         </div>
                     </div>
                     <input type="button" value="Dodaj zadanie" class="card__addTaskButton">
                 </div>
-                <div class="card">
-                    <p class="card__title">Test2</p>
-                    <p class="card__description">Jakis krotki test</p>
-                    <div class="card__list">
-                        <div class="task">
-                            <p class="task__desc">Zrobic strone</p>
-                            <input type="button" class="task__checkbox">
-                        </div>
-                        <div class="task">
-                            <p class="task__desc">Zrobic strone</p>
-                            <input type="button" class="task__checkbox">
-                        </div>
-                        <div class="task">
-                            <p class="task__desc">Zrobic strone</p>
-                            <input type="button" class="task__checkbox">
-                        </div>
-                        <div class="task">
-                            <p class="task__desc">Zrobic strone</p>
-                            <input type="button" class="task__checkbox">
-                        </div>
-                    </div>
-                </div>
-
-
-
                 
-
-
+                <div class="newCard">
+                    <input type="button" value="Dodaj nową kartę" class="newCard__button">
+                </div>
             </section>
         </main>
     </div>
