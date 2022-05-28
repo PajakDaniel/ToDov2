@@ -27,34 +27,21 @@
         <main>
             <section class="cardContainer">
                 <div class="card">
+                    <input type="button" value="❌" class="card__closer" onclick="deleteCard(this)">
                     <textarea class="card__title" placeholder="Tytuł..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
                     <textarea class="card__description" placeholder="Opis..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
                     <div class="card__list">
-                        <div class="task">
-                            <textarea class="task__desc" placeholder="Zadanie..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
-                            <input type="button" class="task__checkbox">
-                        </div>
-                        <div class="task">
-                            <textarea class="task__desc" placeholder="Zadanie..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
-                            <input type="button" class="task__checkbox">
-                        </div>
-                        <div class="task">
-                            <textarea class="task__desc" placeholder="Zadanie..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
-                            <input type="button" class="task__checkbox">
-                        </div>
-                        <div class="task">
-                            <textarea class="task__desc" placeholder="Zadanie..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
-                            <input type="button" class="task__checkbox">
-                        </div>
+                        <input type="button" value="Dodaj zadanie" class="card__addTaskButton" onclick="createTask(this)">
                     </div>
-                    <input type="button" value="Dodaj zadanie" class="card__addTaskButton">
                 </div>
                 
                 <div class="newCard">
-                    <input type="button" value="Dodaj nową kartę" class="newCard__button">
+                    <input type="button" value="Dodaj nową kartę" class="newCard__button" onclick="createCard()">
                 </div>
             </section>
         </main>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
