@@ -82,7 +82,7 @@ body {
 }
 
 .card {
-  width: 320px;
+  width: 365px;
   background: #25796c;
   padding: 0px 15px 15px 15px;
   border-radius: 30px;
@@ -93,11 +93,12 @@ body {
 .card__closer {
   width: 20px;
   height: 20px;
-  background: #25796c;
+  background: transparent;
   border: 0px;
   align-self: flex-end;
   border-radius: 10px;
   opacity: 0.7;
+  transition: 0.4s;
 }
 .card__closer:hover {
   opacity: 1;
@@ -183,7 +184,7 @@ body {
   order: 2;
 }
 .newCard__button {
-  width: 320px;
+  width: 395px;
   padding: 15px;
   border-radius: 30px;
   opacity: 30%;
