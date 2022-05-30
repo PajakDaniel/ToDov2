@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="navbar__logo">
+                <h1 class="navbar__title">ToDo List</h1>
+                <p class="navbar__motto">Pracuj mądrze, nie ciężko.</p>
+            </div>
+            <ul class="navbar__list">
+                <div class="line"></div>
+                <a href="index.html"><li class="navbar__listelement">Lista</li></a>
+                <div class="line line--long"></div>
+                <a href="info.html"><li class="navbar__listelement">Informacje</li></a> 
+                <div class="line"></div>
+                <a href="kontakt.html"><li class="navbar__listelement">Kontakt</li></a>
+                <div class="line"></div>
+                <a href="https://github.com/PajakDaniel/ToDov2" target="_blank"><li class="navbar__listelement">GitHub</li></a> 
+                <div class="line"></div>
+            </ul>
+        </header>
+        <main>
+           <div class="contact">
+                <h3 class="contact__title">Skontaktuj się ze mną</h3>
+                <form class="contact__form">
+                    <input type="text" placeholder="Imie:" name="Imie" class="contact__textInput contact__textInput--short">
+                    <input type="text" placeholder="E-Mail:" name="EMail" class="contact__textInput contact__textInput--short">
+                    <input type="text" placeholder="Tytuł:" name="Tytul" class="contact__textInput contact__textInput">
+                    <textarea class="contact__value" placeholder="Opis..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+                    <button type="submit" class="contact__submit">Wyślij</button>
+                </form>
+           </div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -25,20 +25,13 @@
             </ul>
         </header>
         <main>
-            <section class="cardContainer">
-                <div class="card">
-                    <input type="button" value="❌" class="card__closer" onclick="deleteCard(this)">
-                    <textarea class="card__title" placeholder="Tytuł..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
-                    <textarea class="card__description" placeholder="Opis..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
-                    <div class="card__list">
-                        <input type="button" value="Dodaj zadanie" class="card__addTaskButton" onclick="createTask(this)">
-                    </div>
+           <div class="info">
+                <img src="img/informacje.png" alt="tabele z przykładowymi zadaniami" class="info__image">
+                <div class="info__textCont">
+                    <h3 class="info__title">Organizer planów- ToDoList</h3>
+                    <p class="info__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi architecto esse facilis rem alias molestiae cum quod sapiente minus nulla ipsum numquam quos eveniet reiciendis temporibus, vitae pariatur voluptas incidunt! Ducimus magni culpa magnam nostrum excepturi assumenda, alias iste ad totam? Maxime eveniet repellat iure modi, natus commodi aliquam iusto?</p>
                 </div>
-                
-                <div class="newCard">
-                    <input type="button" value="Dodaj nową kartę" class="newCard__button" onclick="createCard()">
-                </div>
-            </section>
+           </div>
         </main>
     </div>
 

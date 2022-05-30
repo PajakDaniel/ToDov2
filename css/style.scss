@@ -220,6 +220,90 @@ body
     }
 }
 
+//For info.html
+
+.info{
+    margin-top: 90px;
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    &__image{
+        flex-basis: 100%;
+        width: 900px;
+    }
+    &__textCont{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        font-size: 37px;
+        color: white;
+        font-family: $importantTextFont;
+        letter-spacing: 1px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    &__text{
+        font-size: 21px;
+        color: white;
+        font-family: $primaryFont;
+        padding: 10px;
+    }
+
+}
+//For kontakt.html
+
+.contact{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__title{
+        font-size: 34px;
+        font-family: $importantTextFont;
+        color: white;
+        padding: 15px;
+    }
+    &__form{
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__textInput{
+        flex-basis: 100%;
+        padding: 3px;
+        margin: 5px;
+        height: 40px;
+        border-radius: 10px;
+
+        &--short{
+            flex-basis: 45%;
+        }
+        
+    }
+    &__value{
+        flex-basis: 100%;
+        padding: 3px;
+        margin: 5px;
+        resize: none;
+        height: 90px;
+        border-radius: 10px;
+    }
+    &__submit{
+        width: 70px;
+        height: 30px;
+        padding: 3px;
+        margin: 5px;
+        margin-left: auto;
+        border-radius: 10px;
+    }
+}
+
 .line
 {
     background: $secondary;
@@ -227,3 +311,4 @@ body
     width: 2px;
     border-radius: 1px;
 }
+

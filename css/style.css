@@ -199,6 +199,84 @@ body {
   opacity: 80%;
 }
 
+.info {
+  margin-top: 90px;
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info__image {
+  flex-basis: 100%;
+  width: 900px;
+}
+.info__textCont {
+  display: flex;
+  flex-direction: column;
+}
+.info__title {
+  font-size: 37px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.info__text {
+  font-size: 21px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+}
+
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__title {
+  font-size: 34px;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  padding: 15px;
+}
+.contact__form {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact__textInput {
+  flex-basis: 100%;
+  padding: 3px;
+  margin: 5px;
+  height: 40px;
+  border-radius: 10px;
+}
+.contact__textInput--short {
+  flex-basis: 45%;
+}
+.contact__value {
+  flex-basis: 100%;
+  padding: 3px;
+  margin: 5px;
+  resize: none;
+  height: 90px;
+  border-radius: 10px;
+}
+.contact__submit {
+  width: 70px;
+  height: 30px;
+  padding: 3px;
+  margin: 5px;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
 .line {
   background: #25796c;
   height: 50px;
