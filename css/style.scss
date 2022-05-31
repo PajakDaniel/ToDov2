@@ -130,6 +130,7 @@ body
         padding: 3px;
         resize: none;
         height: 35px;
+        border: 0px;
     }
     &__description{
         margin-top: 2px;
@@ -143,6 +144,7 @@ body
         padding: 3px;
         resize: none;
         height: 23px;
+        border: 0px;
     }
     &__list{
         margin-top: 5px;
@@ -204,7 +206,7 @@ body
 
     order: 2;
     &__button{
-        width: 395px;
+        width: 390px;
         padding: 15px;
         border-radius: 30px;
         opacity: 30%;
@@ -265,7 +267,7 @@ body
     &__title{
         font-size: 34px;
         font-family: $importantTextFont;
-        color: white;
+        color: $primary;
         padding: 15px;
     }
     &__form{
@@ -273,6 +275,7 @@ body
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 10px;
     }
     &__textInput{
         flex-basis: 100%;
@@ -280,6 +283,8 @@ body
         margin: 5px;
         height: 40px;
         border-radius: 10px;
+        background: $secondary;
+        border: 2px solid $primary;
 
         &--short{
             flex-basis: 45%;
@@ -293,6 +298,9 @@ body
         resize: none;
         height: 90px;
         border-radius: 10px;
+        background: $secondary;
+        border: 2px solid $primary;
+
     }
     &__submit{
         width: 70px;
@@ -300,7 +308,13 @@ body
         padding: 3px;
         margin: 5px;
         margin-left: auto;
+        border: 2px solid $primary;
         border-radius: 10px;
+        background: $secondary;
+        transition: 0.3s;
+        &:hover{
+            background: $primary;
+        }
     }
 }
 

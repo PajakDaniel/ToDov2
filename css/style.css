@@ -82,7 +82,7 @@ body {
 }
 
 .card {
-  width: 365px;
+  width: 360px;
   background: #25796c;
   padding: 0px 15px 15px 15px;
   border-radius: 30px;
@@ -113,6 +113,7 @@ body {
   padding: 3px;
   resize: none;
   height: 35px;
+  border: 0px;
 }
 .card__description {
   margin-top: 2px;
@@ -125,6 +126,7 @@ body {
   padding: 3px;
   resize: none;
   height: 23px;
+  border: 0px;
 }
 .card__list {
   margin-top: 5px;
@@ -184,7 +186,7 @@ body {
   order: 2;
 }
 .newCard__button {
-  width: 395px;
+  width: 390px;
   padding: 15px;
   border-radius: 30px;
   opacity: 30%;
@@ -241,7 +243,7 @@ body {
 .contact__title {
   font-size: 34px;
   font-family: "Roboto Slab", serif;
-  color: white;
+  color: #42b3a2;
   padding: 15px;
 }
 .contact__form {
@@ -249,6 +251,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 10px;
 }
 .contact__textInput {
   flex-basis: 100%;
@@ -256,6 +259,8 @@ body {
   margin: 5px;
   height: 40px;
   border-radius: 10px;
+  background: #25796c;
+  border: 2px solid #42b3a2;
 }
 .contact__textInput--short {
   flex-basis: 45%;
@@ -267,6 +272,8 @@ body {
   resize: none;
   height: 90px;
   border-radius: 10px;
+  background: #25796c;
+  border: 2px solid #42b3a2;
 }
 .contact__submit {
   width: 70px;
@@ -274,7 +281,13 @@ body {
   padding: 3px;
   margin: 5px;
   margin-left: auto;
+  border: 2px solid #42b3a2;
   border-radius: 10px;
+  background: #25796c;
+  transition: 0.3s;
+}
+.contact__submit:hover {
+  background: #42b3a2;
 }
 
 .line {
